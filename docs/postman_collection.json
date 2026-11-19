@@ -1,0 +1,839 @@
+{
+  "info": {
+    "_postman_id": "1360a63c-813f-4262-85b0-e29db11e4b4a",
+    "name": "Library Management System API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58371156",
+    "_collection_link": "https://go.postman.co/collection/58371156-1360a63c-813f-4262-85b0-e29db11e4b4a?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Books",
+      "item": [
+        {
+          "name": "Genres",
+          "item": [
+            {
+              "name": "create Genre",
+              "protocolProfileBehavior": {
+                "disableCookies": false,
+                "followRedirects": true,
+                "strictSSL": false
+              },
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Personal Development\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/genres",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "genres"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get All Genres",
+              "protocolProfileBehavior": {
+                "disableCookies": false,
+                "followRedirects": true,
+                "strictSSL": false
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Personal Development\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/genres",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "genres"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Create Genre",
+              "protocolProfileBehavior": {
+                "disableCookies": false,
+                "followRedirects": true,
+                "strictSSL": false
+              },
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Personal Development\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/genres",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "genres"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get One Genre",
+              "protocolProfileBehavior": {
+                "disableCookies": false,
+                "followRedirects": true,
+                "strictSSL": false
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Personal Growth\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/genres/37a81638-6ae5-4e78-aab7-2b2ad61bd8d0",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "genres",
+                    "37a81638-6ae5-4e78-aab7-2b2ad61bd8d0"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Genre",
+              "protocolProfileBehavior": {
+                "disableCookies": false,
+                "followRedirects": true,
+                "strictSSL": false
+              },
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Personal Growth\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/genres/37a81638-6ae5-4e78-aab7-2b2ad61bd8d0",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "genres",
+                    "37a81638-6ae5-4e78-aab7-2b2ad61bd8d0"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Genre",
+              "protocolProfileBehavior": {
+                "disableCookies": false,
+                "followRedirects": true,
+                "strictSSL": false
+              },
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Personal Growth\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/genres/37a81638-6ae5-4e78-aab7-2b2ad61bd8d0",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "genres",
+                    "37a81638-6ae5-4e78-aab7-2b2ad61bd8d0"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Genre",
+              "protocolProfileBehavior": {
+                "disableCookies": false,
+                "followRedirects": true,
+                "strictSSL": false
+              },
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Personal Growth\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/genres/37a81638-6ae5-4e78-aab7-2b2ad61bd8d0",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "genres",
+                    "37a81638-6ae5-4e78-aab7-2b2ad61bd8d0"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "delete book",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"totalCopies\": 8\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/books/8be2366a-2bc7-43dc-a6a7-0641dee6ad30",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "books",
+                "8be2366a-2bc7-43dc-a6a7-0641dee6ad30"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/books",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "maxResponseSize": 52428800,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"The Psychology of Money\",\r\n  \"author\": \"Morgan Housel\",\r\n  \"isbn\": \"9780857197689\",\r\n  \"publishedYr\": 2020,\r\n  \"totalCopies\": 5,\r\n  \"genreId\": \"6fa9ea9f-7e95-489c-9147-056d7a1efbb2\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "books"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": " http://localhost:3000/books",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "maxResponseSize": 52428800,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/books?search=Chinua\n",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "books"
+              ],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "Chinua\n"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/books",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "maxResponseSize": 52428800,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/books?genreId=6fa9ea9f-7e95-489c-9147-056d7a1efbb2&search=Chinua\n",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "books"
+              ],
+              "query": [
+                {
+                  "key": "genreId",
+                  "value": "6fa9ea9f-7e95-489c-9147-056d7a1efbb2"
+                },
+                {
+                  "key": "search",
+                  "value": "Chinua\n"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/books",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "maxResponseSize": 52428800,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/books?genreId=6fa9ea9f-7e95-489c-9147-056d7a1efbb2&search=Chinua\n",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "books"
+              ],
+              "query": [
+                {
+                  "key": "genreId",
+                  "value": "6fa9ea9f-7e95-489c-9147-056d7a1efbb2"
+                },
+                {
+                  "key": "search",
+                  "value": "Chinua\n"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": " http://localhost:3000/books",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "maxResponseSize": 52428800,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/books?genreId=6fa9ea9f-7e95-489c-9147-056d7a1efbb2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "books"
+              ],
+              "query": [
+                {
+                  "key": "genreId",
+                  "value": "6fa9ea9f-7e95-489c-9147-056d7a1efbb2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/books",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "maxResponseSize": 52428800,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "books"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/books",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "maxResponseSize": 52428800,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "books"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/books/8be2366a-2bc7-43dc-a6a7-0641dee6ad30",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "maxResponseSize": 52428800,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"totalCopies\": 8\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/books/8be2366a-2bc7-43dc-a6a7-0641dee6ad30",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "books",
+                "8be2366a-2bc7-43dc-a6a7-0641dee6ad30"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/books",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "maxResponseSize": 52428800,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"The Psychology of Money\",\r\n  \"author\": \"Morgan Housel\",\r\n  \"isbn\": \"9780857197689\",\r\n  \"publishedYr\": 2020,\r\n  \"totalCopies\": 5,\r\n  \"genreId\": \"6fa9ea9f-7e95-489c-9147-056d7a1efbb2\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "books"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": " http://localhost:3000/books",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "maxResponseSize": 52428800,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/books?genreId=6fa9ea9f-7e95-489c-9147-056d7a1efbb2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "books"
+              ],
+              "query": [
+                {
+                  "key": "genreId",
+                  "value": "6fa9ea9f-7e95-489c-9147-056d7a1efbb2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/books",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "maxResponseSize": 52428800,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/books?page=2&limit=5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "books"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "2"
+                },
+                {
+                  "key": "limit",
+                  "value": "5"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/books/8be2366a-2bc7-43dc-a6a7-0641dee6ad30",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "maxResponseSize": 52428800,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"totalCopies\": 8\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/books/8be2366a-2bc7-43dc-a6a7-0641dee6ad30",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "books",
+                "8be2366a-2bc7-43dc-a6a7-0641dee6ad30"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Create Genre Copy",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "strictSSL": false
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Personal Development\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/genres",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "genres"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Register User",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Test Learner\",\r\n  \"email\": \"testlearner@example.com\",\r\n  \"password\": \"LearnerPass123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login User",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"testlearner@example.com\",\r\n  \"password\": \"LearnerPass123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "new",
+      "protocolProfileBehavior": {
+        "disableCookies": false,
+        "followRedirects": true,
+        "protocolVersion": "auto",
+        "strictSSL": false
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/books?search=Chinua",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "books"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "Chinua"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ]
+}

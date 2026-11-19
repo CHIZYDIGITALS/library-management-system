@@ -1,0 +1,60 @@
+import {
+  Controller,
+  Get,
+  Query,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+  UseGuards,
+} from '@nestjs/common';
+
+import { Role } from '@prisma/client';
+import { BooksService } from './books.service.js';
+import { CreateBookDto } from './dto/create-book.dto.js';
+import { UpdateBookDto } from './dto/update-book.dto.js';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard.js';
+import { RolesGuard } from '../auth/roles.guard.js';
+import { Roles } from '../auth/roles.decorator.js';
+
+@Controller('books')
+export class BooksController {
+  constructor(private readonly booksService: BooksService) {}
+
+  @Get()
+  findAll(
+    @Query('genreId') genreId?: string,
+    @Query('search') search?: string,
+    @Query('page') page = '1',
+    @Query('limit') limit = '10',
+  ) {
+    return this.booksService.findAll(
+      genreId,
+      search,
+      Number(page),
+      Number(limit),
+    );
+  }
+
+  @Post()
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(Role.LIBRARIAN)
+  create(@Body() dto: CreateBookDto) {
+    return this.booksService.create(dto);
+  }
+
+  @Patch(':id')
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(Role.LIBRARIAN)
+  update(@Param('id') id: string, @Body() dto: UpdateBookDto) {
+    return this.booksService.update(id, dto);
+  }
+
+  @Delete(':id')
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(Role.LIBRARIAN)
+  remove(@Param('id') id: string) {
+    return this.booksService.remove(id);
+  }
+}

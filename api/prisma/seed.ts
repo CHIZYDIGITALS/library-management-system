@@ -2,6 +2,7 @@ import 'dotenv/config';
 import { PrismaClient, Role } from '@prisma/client';
 import { PrismaPg } from '@prisma/adapter-pg';
 import { Pool } from 'pg';
+import bcrypt from 'bcrypt';
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 const adapter = new PrismaPg(pool);
@@ -9,6 +10,8 @@ const prisma = new PrismaClient({ adapter });
 
 async function main() {
   console.log('Seeding library database...');
+  const librarianPassword = await bcrypt.hash('AdaLibrary123!', 10);
+  const patronPassword = await bcrypt.hash('ChidiReader123!', 10);
 
   // 1. Seed Users (Patrons & Librarians)
   const librarian = await prisma.user.upsert({
@@ -18,6 +21,7 @@ async function main() {
       email: 'ada.librarian@library.org',
       name: 'Ada Lovelace',
       role: Role.LIBRARIAN,
+      password: librarianPassword,
     },
   });
 
@@ -28,9 +32,9 @@ async function main() {
       email: 'chidi.reader@library.org',
       name: 'Chidi Okafor',
       role: Role.PATRON,
+      password: patronPassword,
     },
   });
-
   // 2. Seed 4 Genres
   const genreNames = [
     'Software Engineering',
