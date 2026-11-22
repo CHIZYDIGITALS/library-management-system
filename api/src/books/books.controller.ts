@@ -37,6 +37,11 @@ export class BooksController {
     );
   }
 
+  @Get(':id')
+  findOne(@Param('id') id: string) {
+    return this.booksService.findOne(id);
+  }
+
   @Post()
   @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(Role.LIBRARIAN)

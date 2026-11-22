@@ -90,4 +90,19 @@ export class BooksService {
       where: { id },
     });
   }
+
+  async findOne(id: string) {
+    const book = await this.prisma.book.findUnique({
+      where: { id },
+      include: {
+        genre: true,
+      },
+    });
+
+    if (!book) {
+      throw new NotFoundException('Book not found');
+    }
+
+    return book;
+  }
 }

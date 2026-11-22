@@ -1,0 +1,161 @@
+/* Main application */
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.home-page h1 {
+  color: #183153;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.home-page > p {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+/* Search and genre filter */
+.search-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.search-controls input,
+.search-controls select {
+  padding: 13px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  outline: none;
+}
+
+.search-controls input {
+  flex: 1;
+}
+
+.search-controls input:focus,
+.search-controls select:focus {
+  border-color: #2563eb;
+}
+
+/* Book grid */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* Individual book card */
+.book-card {
+  background: white;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.book-card h3 {
+  color: #1d4ed8;
+  margin-bottom: 15px;
+}
+
+.book-card p {
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+/* Book details page */
+.book-detail-page {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.book-detail-page h1 {
+  color: #183153;
+  margin: 25px 0;
+}
+
+.book-detail-page p {
+  margin-bottom: 16px;
+  color: #475569;
+}
+
+.back-link {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-controls {
+    flex-direction: column;
+  }
+
+  .home-page h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page {
+    padding: 25px 16px;
+  }
+
+  .book-detail-page {
+    margin: 20px 16px;
+    padding: 22px;
+  }
+}
+
+/* Book sorting */
+.sort-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: #475569;
+}
+
+.sort-controls select {
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+.sort-controls select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+@media (max-width: 480px) {
+  .sort-controls {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
