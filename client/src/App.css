@@ -159,3 +159,88 @@
     flex-wrap: wrap;
   }
 }
+
+/* Space Booking Page */
+.space-booking-page {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 35px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.space-booking-page h1 {
+  color: #183153;
+  font-size: 30px;
+  margin-bottom: 28px;
+}
+
+.space-booking-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.space-booking-page form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.space-booking-page label {
+  color: #334155;
+  font-weight: 600;
+}
+
+.space-booking-page input,
+.space-booking-page select {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.space-booking-page input:focus,
+.space-booking-page select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.space-booking-page button {
+  padding: 14px;
+  background: #183153;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.space-booking-page button:hover {
+  background: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .space-booking-page {
+    margin: 30px 20px;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .space-booking-page {
+    margin: 20px 16px;
+    padding: 20px;
+  }
+
+  .space-booking-page h1 {
+    font-size: 25px;
+  }
+}
